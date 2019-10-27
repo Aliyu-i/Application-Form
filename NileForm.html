@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .head{
+            text-align: center;
+            color:whitesmoke;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: blue;
+             }
+         .marg{
+             margin-left: 54px;
+         }   
+          .shift{
+              margin-left: 45px;
+          } 
+          .move{
+              text-align: center;
+          }
+          head{
+            
+            background-color: blue;
+          }
+          form{
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              color: whitesmoke;
+          }
+          body{
+              background-color: blue;
+          }
+            </style>
+    <title>Registration</title>
+    <h1 class=head>NILE UNIVERSITY APPLICATION FORM</h1>
+</head>
+<body>
+<form class="move">
+Full Name:  <input type="text" name="firstname" autofocus placeholder="First Name" required="true"> <input type="text" name="lastname" placeholder="Last Name" required="true"><br>
+<br>School: <input type="text" name="school" placeholder="School Name"><br><br>
+State Of Origin: <input type="text" name="state" list="lists"placeholder="Choose your state" required="true">
+<datalist id="lists">
+    <option value="Rivers State">
+    <option value="Edo State">
+    <option value="Delta State">
+    <option value="Kano State">
+</datalist><br><br>
+Gender: <input type="radio" name="gender" value="Male">Male  <input type="radio" name="gender" value="Female">Female<br><br>
+Phone: <input type="tel"  name="phonenumber" placeholder="Phone Number" pattern="[+0-9]{10,}" value="+234-" title="Format:(+234**********) Minimum 10 numbers"required="true">
+<br><br>Email: <input type="email" name="email" placeholder="example:john@yahoo.com" required="true"><br><br>
+Jamb: <input type="text" name="subject" placeholder="Subject" required="true"> <input type="number" name="score" placeholder="Score" required="true"><br>
+      <input type="text" name="subject" placeholder="Subject" required="true" class="shift"> <input type="number" name="score" placeholder="Score" required="true"><br>
+      <input type="text" name="subject" placeholder="Subject" required="true" class="shift"> <input type="number" name="score" placeholder="Score" required="true"><br>
+      <input type="text" name="subject" placeholder="Subject" required="true" class="shift"> <input type="number" name="score" placeholder="Score" required="true"><br><br>
+WAEC: <input type="text" name="subject" placeholder="Subject" required="true"> <input type="text" name="grade" placeholder="Grade" required="true"><br>
+<input type="text" name="subject" placeholder="Subject" required="true" class="marg"> <input type="text" name="grade" placeholder="Grade" required="true"><br> 
+<input type="text" name="subject" placeholder="Subject" required="true" class="marg"> <input type="text" name="grade" placeholder="Grade" required="true"><br> 
+<input type="text" name="subject" placeholder="Subject" required="true" class="marg"> <input type="text" name="grade" placeholder="Grade" required="true"><br> 
+<input type="text" name="subject" placeholder="Subject" required="true" class="marg"> <input type="text" name="grade" placeholder="Grade" required="true"><br> 
+<input type="text" name="subject" placeholder="Subject" required="true" class="marg"> <input type="text" name="grade" placeholder="Grade" required="true"><br> 
+<input type="text" name="subject" placeholder="Subject" required="true" class="marg"> <input type="text" name="grade" placeholder="Grade" required="true"><br> 
+<input type="text" name="subject" placeholder="Subject" required="true" class="marg"> <input type="text" name="grade" placeholder="Grade" required="true"><br> 
+<input type="text" name="subject" placeholder="Subject" required="true" class="marg"> <input type="text" name="grade" placeholder="Grade" required="true"><br><br>
+First Choice:  <input type="text" name="choice" list="choices" placeholder="First Choice" required="true" style=margin-left:15px>
+<datalist id="choices">
+    <option value="Computer Science">
+    <option value="Civil Engineering">   
+</datalist><br><br>
+Second choice: <input type="text" name="choice2" list="choices2" placeholder="Second Choice" required="true">
+<datalist id="choices2">
+   <option value="Computer Engineering">
+   <option value="Electrical Engineering"> 
+</datalist><br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
